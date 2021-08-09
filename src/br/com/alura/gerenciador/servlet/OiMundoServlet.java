@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns="/oi")
 public class OiMundoServlet extends HttpServlet{
 	
+	private static final long serialVersionUID = 1L;
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		PrintWriter out = resp.getWriter();
@@ -19,5 +21,7 @@ public class OiMundoServlet extends HttpServlet{
 		out.println("oi mundo, vc escreveu o primeiro servlet.");
 		out.println("</body>");
 		out.println("</html>");
+		
+		System.out.println("o servlet OiMundoServlet foi chamado");
 	}
 }
