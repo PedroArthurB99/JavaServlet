@@ -23,7 +23,7 @@ public class ListaEmpresasServlet extends HttpServlet {
 		//Aqui vamos criar nossa chamada para o JSP
 		RequestDispatcher rd = request.getRequestDispatcher("/listaEmpresas.jsp");
 		request.setAttribute("lista", lista);
-		rd.forward(request, response);
+		rd.forward(request, response); 
 		
 	}
 
